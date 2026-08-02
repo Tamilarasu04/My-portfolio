@@ -7,16 +7,16 @@ const Footer = () => {
       {/* Top Row */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 w-full font-medium">
         <div className="flex flex-col gap-1">
-          <p>Cinematic & Creative Production</p>
-          <p>Lighting, Editing, Photo</p>
-          <p>Motion Graphics</p>
+          <p>Full Stack Web Development</p>
+          <p>React, Next.js, Node.js</p>
+          <p>Clean, Scalable, Modern UI</p>
         </div>
-        
+
         <div className="flex flex-col gap-1 md:items-center">
-          <p>5+ years of experience</p>
-          <a href="#work" className="underline hover:text-white transition-colors mt-1 underline-offset-4 decoration-1">View Work</a>
+          <p>Available for freelance &amp; full-time roles</p>
+          <a href="#projects" className="underline hover:text-white transition-colors mt-1 underline-offset-4 decoration-1">View Work</a>
         </div>
-        
+
         <div className="flex flex-col gap-1 md:items-end">
           <p>Worldwide Available</p>
           <p>{new Date().getFullYear()}</p>
@@ -26,7 +26,7 @@ const Footer = () => {
       {/* Middle Huge Text */}
       <div className="w-full flex justify-center items-center py-20 md:py-24 overflow-hidden">
         <h2 className="text-[18vw] md:text-[16vw] leading-none font-sans font-bold tracking-tighter lowercase select-none text-[#f4f4f4] w-full text-center">
-          leeshark
+          tamilarasu
         </h2>
       </div>
 
@@ -35,15 +35,18 @@ const Footer = () => {
         <div className="flex flex-col gap-6">
           <a href="#contact" className="underline hover:text-white transition-colors underline-offset-4 decoration-1 font-bold">Contact</a>
           <p className="text-white/60 font-mono text-[9px] md:text-[10px]">
-            &copy; {new Date().getFullYear()} Leeshark Studio | Built with React
+            &copy; {new Date().getFullYear()} Tamilarasu | Built with React
           </p>
         </div>
-        
-        <div className="flex flex-col gap-1 md:items-center">
-          <a href="mailto:hello@leeshark.com" className="underline hover:text-white transition-colors underline-offset-4 decoration-1 lowercase">hello@leeshark.com</a>
+
+        <div className="flex flex-col gap-2 md:items-center">
+          <a href="mailto:tamilarasutom123@gmail.com" className="underline hover:text-white transition-colors underline-offset-4 decoration-1 lowercase">tamilarasutom123@gmail.com</a>
+          <a href="tel:+918148525594" className="underline hover:text-white transition-colors underline-offset-4 decoration-1">+91 81485 25594</a>
         </div>
-        
-        <div className="flex flex-col gap-1 md:items-end">
+
+        <div className="flex flex-col gap-2 md:items-end">
+          <a href="https://github.com/Tamilarasu04" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors underline-offset-4 decoration-1">GitHub</a>
+          <a href="https://www.linkedin.com/in/tamilarasu-p-649bba25a" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors underline-offset-4 decoration-1">LinkedIn</a>
           <a href="#" className="underline hover:text-white transition-colors underline-offset-4 decoration-1">Privacy Policy</a>
         </div>
       </div>

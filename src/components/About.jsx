@@ -1,12 +1,12 @@
 import React from 'react';
-import stackImage from '../assets/about/image.png';
+import stackImage from '../assets/profile/profile.jpg';
 import reactImage from '../assets/about/react.png';
 import nodeImage from '../assets/about/node.png';
 import mongoImage from '../assets/about/mongodb.png';
 
 const About = () => {
   return (
-    <section className="bg-[#ff2a2a] pt-20 pb-40 px-6 md:px-12 w-full relative overflow-hidden font-sans">
+    <section id="about" className="bg-[#ff2a2a] pt-20 pb-40 px-6 md:px-12 w-full relative overflow-hidden font-sans">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-start">
         
         {/* Left Side: ID Badge and Skills */}
@@ -42,7 +42,7 @@ const About = () => {
           
           <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Hello!</h2>
           <p className="text-lg font-bold mb-12 leading-relaxed max-w-3xl text-red-50">
-            Hi, my name is <span className="text-black text-xl font-black mx-1 tracking-wide uppercase">Leeshark</span>, a passionate full-stack developer based in [Location], dedicated to crafting clean, functional, and highly scalable web applications.
+            Hi, my name is <span className="text-black text-xl font-black mx-1 tracking-wide uppercase">Tamilarasu</span>, a passionate Full Stack Developer based in Chennai, India, specializing in React.js, Next.js, Node.js, Express.js, MongoDB, PostgreSQL and Tailwind CSS. I enjoy transforming ideas into scalable, responsive and user-friendly applications with clean UI and optimized performance.
           </p>
 
           {/* Horizontal Skills Row (Transparent & Large) */}

@@ -34,7 +34,7 @@ const Navbar = () => {
         {/* Left Side: Logo/Name */}
         <div className="flex items-center">
           <a href="#" className="text-white text-2xl font-black tracking-tight">
-            Leeshark<span className="text-red-500">.</span>
+            Tamilarasu<span className="text-red-500">.</span>
           </a>
         </div>
 
@@ -53,10 +53,17 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Right Side: CTA Button */}
-        <div className="hidden md:block">
-          <a 
-            href="#contact" 
+        {/* Right Side: CTA Buttons */}
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href="/resume.pdf"
+            download
+            className="px-6 py-2.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold hover:bg-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300 backdrop-blur-md"
+          >
+            Resume
+          </a>
+          <a
+            href="#contact"
             className="px-6 py-2.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold hover:bg-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300 backdrop-blur-md"
           >
             Hire Me
@@ -97,10 +104,18 @@ const Navbar = () => {
               {link}
             </a>
           ))}
-          <div className="pt-4 pb-2">
-             <a 
-               href="#contact" 
-               onClick={() => setIsOpen(false)} 
+          <div className="pt-4 pb-2 flex flex-col gap-3">
+             <a
+               href="/resume.pdf"
+               download
+               onClick={() => setIsOpen(false)}
+               className="inline-block px-6 py-3 rounded-full bg-black/20 border border-white text-white font-black hover:bg-black hover:text-white transition-colors w-full text-center shadow-lg"
+             >
+               Resume
+             </a>
+             <a
+               href="#contact"
+               onClick={() => setIsOpen(false)}
                className="inline-block px-6 py-3 rounded-full bg-white text-[#ff2a2a] font-black hover:bg-black hover:text-white transition-colors w-full text-center shadow-lg"
              >
                Hire Me

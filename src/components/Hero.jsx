@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // Adjusted import path for the video
-import heroVideo from '../assets/hero video/Developer_introduces_self_and_sk…_202606051918.mp4';
+import heroVideo from '../assets/hero video/intro.mp4';
 
 const Hero = () => {
   const videoRef = useRef(null);
@@ -32,7 +32,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-screen overflow-hidden bg-black">
+    <section id="home" className="relative w-full h-screen overflow-hidden bg-black">
       {/* Background Video */}
       <video
         ref={videoRef}
@@ -44,6 +44,9 @@ const Hero = () => {
         <source src={heroVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+
+      {/* Blend the video's red into the brand red of the section below */}
+      <div className="absolute bottom-0 left-0 w-full h-32 md:h-48 z-10 bg-gradient-to-b from-transparent to-[#ff2a2a] pointer-events-none" />
 
       {/* Content Container */}
       <div className="absolute inset-0 z-20 px-6 pb-20 md:pb-[8%] md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-end md:justify-between items-start md:items-end text-left w-full">
@@ -64,24 +67,24 @@ const Hero = () => {
             data-aos-delay="200"
             className="text-white text-sm md:text-lg font-semibold mb-8 max-w-md drop-shadow-md"
           >
-            I build fast, scalable and modern web applications using React, Node.js and Tailwind CSS.
+            Building Modern Web Applications &amp; Digital Experiences with React, Node.js and Tailwind CSS.
           </p>
 
           {/* Buttons */}
-          <div 
+          <div
             data-aos="fade-up"
             data-aos-delay="400"
             className="flex flex-row flex-wrap items-center gap-3 w-full"
           >
             {/* Primary Button */}
-            <button className="px-4 py-2 md:px-6 md:py-2 text-xs md:text-base rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-md">
+            <a href="#projects" className="px-4 py-2 md:px-6 md:py-2 text-xs md:text-base rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-md">
               View My Work
-            </button>
-            
+            </a>
+
             {/* Secondary Button - Glassmorphism style */}
-            <button className="px-4 py-2 md:px-6 md:py-2 text-xs md:text-base rounded-full bg-black/40 border border-white text-white font-semibold hover:bg-black/60 transition-all duration-300 backdrop-blur-md">
+            <a href="#contact" className="px-4 py-2 md:px-6 md:py-2 text-xs md:text-base rounded-full bg-black/40 border border-white text-white font-semibold hover:bg-black/60 transition-all duration-300 backdrop-blur-md">
               Contact Me
-            </button>
+            </a>
           </div>
         </div>
 
