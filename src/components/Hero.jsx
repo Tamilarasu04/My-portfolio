@@ -39,14 +39,14 @@ const Hero = () => {
         loop
         muted={isMuted}
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        className="absolute top-0 left-0 w-full h-full object-cover object-[center_25%] z-0"
       >
         <source src={heroVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       {/* Blend the video's red into the brand red of the section below */}
-      <div className="absolute bottom-0 left-0 w-full h-32 md:h-48 z-10 bg-gradient-to-b from-transparent to-[#ff2a2a] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-full h-10 md:h-16 z-10 bg-gradient-to-b from-transparent to-[#ff2a2a] pointer-events-none" />
 
       {/* Content Container */}
       <div className="absolute inset-0 z-20 px-6 pb-20 md:pb-[8%] md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-end md:justify-between items-start md:items-end text-left w-full">
